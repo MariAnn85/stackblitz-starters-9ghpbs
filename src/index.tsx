@@ -21,21 +21,14 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />}>
       <Route index={true} element={<HomePage />} />
       <Route path="product/:slug" element={<ProductPage />} />
-      {/* <Route path="dashboard" element={<Dashboard />} /> */}
-      {/* ... etc. */}
+     
     </Route>
   )
-)
-//const rootElement = document.getElementById('root');
-//const root = createRoot(rootElement);
-
-
-
-ReactDOM.render(
-  <StrictMode>
-    <App /> 
-  </StrictMode>,
-  document.getElementById('root')
 );
 
-
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  <React.StrictMode>
+    <App />
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
