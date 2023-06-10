@@ -7,11 +7,11 @@ import {
   Route,
   RouterProvider,
 } from 'react-router-dom'
-//import 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css';
+import 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css';
 
 import App from './App';
 
-import HomePage from '/pages/HomePage';
+import HomePage from './pages/Homepage';
 import ProductPage from './pages/ProductPage';
 
 
@@ -30,13 +30,13 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <App />
     <RouterProvider router={router} />
   </React.StrictMode>
-)
-
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
 );
+
+//const rootElement = document.getElementById('root');
+//const root = createRoot(rootElement);
+
+//root.render(
+  //<StrictMode>
+   // <App />
+  //</StrictMode>
+//);
