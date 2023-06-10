@@ -26,21 +26,11 @@ const router = createBrowserRouter(
     </Route>
   )
 )
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
-//ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  //<React.StrictMode>
-    //<App />
-    //<RouterProvider router={router} />
- // </React.StrictMode>
-//);
+//const rootElement = document.getElementById('root');
+//const root = createRoot(rootElement);
 
-//ReactDOM.render(
-  //<React.StrictMode>
-     //<App />
-  //<React.StrictMode>
-  //document.getElementById("app")
-//);
+
+
 ReactDOM.render(
   <StrictMode>
     <App /> 
@@ -49,9 +39,3 @@ ReactDOM.render(
 );
 
 
-//root.render(
-//<StrictMode>
-   // <App />
-    //<RouterProvider router={router} />
-  //</StrictMode>
-//);
