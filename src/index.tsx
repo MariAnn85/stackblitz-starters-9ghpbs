@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -25,18 +26,32 @@ const router = createBrowserRouter(
     </Route>
   )
 )
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <App />
-    <RouterProvider router={router} />
-  </React.StrictMode>
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+//ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  //<React.StrictMode>
+    //<App />
+    //<RouterProvider router={router} />
+ // </React.StrictMode>
+//);
+
+//ReactDOM.render(
+  //<React.StrictMode>
+     //<App />
+  //<React.StrictMode>
+  //document.getElementById("app")
+//);
+ReactDOM.render(
+  <StrictMode>
+    <App /> 
+  </StrictMode>,
+  document.getElementById('root')
 );
 
-//const rootElement = document.getElementById('root');
-//const root = createRoot(rootElement);
 
 //root.render(
-  //<StrictMode>
+//<StrictMode>
    // <App />
+    //<RouterProvider router={router} />
   //</StrictMode>
 //);
